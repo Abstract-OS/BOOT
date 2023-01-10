@@ -49,7 +49,7 @@ lazy_static="1.4"
 rust_decimal="1.12.2"
 rust_decimal_macros="1.12.2"
 regex="1"
-cosmrs = {version = "0.9.0", features=["dev","cosmwasm","grpc"]}
+cosmrs = {version = "0.11.0", features=["dev","cosmwasm","grpc"]}
 chrono= "0.4"
 schemars = "0.8.10"
 base16 = "0.2.1"
