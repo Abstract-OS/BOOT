@@ -21,3 +21,6 @@ boot-contract-derive = {path = "packages/boot-contract-derive", version = "0.5.1
 boot-fns-derive = {path = "packages/boot-fns-derive", version = "0.5.1"}
 boot-core ={path ="boot-core", version = "0.5.1"}
 serde = { version = "1.0.103", default-features = false, features = ["derive"] }
+
+[patch.crates-io]
+cosmrs = {git = "https://github.com/Abstract-OS/cosmos-rust.git", features=["dev","cosmwasm","grpc"]}

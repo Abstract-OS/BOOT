@@ -20,9 +20,9 @@ cosmwasm-std = { workspace = true }
 serde =  { workspace = true }
 anyhow = { workspace = true }
 cw-multi-test = { workspace = true }
-cw20 = "0.15.0"
-cw20-base = "0.15.0"
-cw1-whitelist = "0.15.1"
+cw20 = "1.0.1"
+cw20-base = "1.0.1"
+cw1-whitelist = "1.0.1"
 
 [dev-dependencies]
 tokio = "1.19.1"

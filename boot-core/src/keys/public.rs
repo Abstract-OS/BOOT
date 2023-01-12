@@ -25,7 +25,7 @@ Variant::Bech32M ?
 impl PublicKey {
     /// Generate a Cosmos/Tendermint/Terrad Public Key
     pub fn from_bitcoin_public_key(bpub: &bitcoin::util::key::PublicKey) -> PublicKey {
-        let bpub_bytes = bpub.key.serialize();
+        let bpub_bytes = bpub.inner.serialize();
         //     eprintln!("B-PK-{}", hex::encode(bpub_bytes));
         let raw_pub_key = PublicKey::pubkey_from_public_key(&bpub_bytes);
         let raw_address = PublicKey::address_from_public_key(&bpub_bytes);

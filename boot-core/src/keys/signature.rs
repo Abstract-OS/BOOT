@@ -23,8 +23,8 @@ impl Signature {
         sha.result(&mut sha_result);
 
         let message: Message = Message::from_slice(&sha_result)?;
-        let secp_sig = secp256k1::Signature::from_compact(sig.as_slice())?;
-        secp.verify(&message, &secp_sig, &pk)?;
+        let secp_sig = secp256k1::ecdsa::Signature::from_compact(sig.as_slice())?;
+        secp.verify_ecdsa(&message, &secp_sig, &pk)?;
         Ok(())
     }
 }
